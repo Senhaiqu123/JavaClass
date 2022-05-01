@@ -21,10 +21,10 @@ public class HelloWorld {
 		intArray[0]=2;
 		intArray[1]=2;
 		intArray[2]=2;
-		intArray[3]=2; //----index outof bundled
+		intArray[3]=2; //----index outof bounded
 		
-		//O(1) big O worst case bundled;
-		//O(n) grow as n, propshally   
+		//O(1) big O worst case bounded;
+		//O(n) grow as n   
 		//O(n^2) grow as n^2
 		
 		//Data Structure 
@@ -33,7 +33,8 @@ public class HelloWorld {
 		
 		//Fizbuzz
 		
-		//Java Rejex
+		
+		//Java Regex
 		
 		// Java Gabarge colletion
 		
