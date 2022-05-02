@@ -30,7 +30,8 @@ public class ChangeCalculator {
 		 	int num005=0;
 		 	int num001=0;
 		 	
-		 	// create a double type variable called amount that will take user's input as value 
+		 	// create a double type variable called amount 
+		 	//that will take user's input as value 
 		    double amount;
 		    Scanner scan=new Scanner(System.in);
 			System.out.println("Please Enter an amount with double value");
@@ -79,7 +80,7 @@ public class ChangeCalculator {
 			}
 			
 		 	// if the money is over 0.10, we decrease the value by 0.10 and increase 1 
-		 	// to the number of dimes then check again until the value is under 0
+		 	// to the number of dimes then check again until the value is under 0.1
 			if(amount>=0.10) {
 				while(amount>=0.10) {
 					num010++;
@@ -95,7 +96,7 @@ public class ChangeCalculator {
 			}
 			
 		 	// if the money is over 0.01, we decrease the value by 0.01 and increase 1 
-		 	// to the number of pennies then check again until the value is under 0.1
+		 	// to the number of pennies then check again until the value is under 0.01
 			if(amount>=0.01){
 				while(amount>=0.009999) {
 					num001++;
