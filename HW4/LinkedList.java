@@ -58,14 +58,14 @@ public class LinkedList<T> implements List<T> {
 	}
 
 	@Override
+	//check all the items in the list if find a match return true otherwise return false
 	public boolean contains(Object item) {
 		// TODO Auto-generated method stub
 		
-		//Check all the element's data, any of them match item's data return true otherwise return false
 		Node n=head;
-		for(int i=0;i<size;i++) {
-			if(n.data.equals((T)item)) return true;
-			else n=n.next;
+		while(n.next!=null) {
+			if(n.data.equals(item)) return true;
+			n=n.next;
 		}
 		return false;
 	}
@@ -144,6 +144,7 @@ public class LinkedList<T> implements List<T> {
 		//If add an item out of list range throw  an exception
 		if(index<0||index>size) 
 			throw new IndexOutOfBoundsException();
+		
 		Node current=head;
 		Node newNode=new Node(item);
 		
@@ -155,14 +156,14 @@ public class LinkedList<T> implements List<T> {
 			size++;
 		}
 		
-		//If add the item after head, find the Node at index place, put the item  before this Node
+		//If add the item after head, find the Node before index place, put the item after this Node
 		else {
-			for(int i=0;i<index;i++)
+			for(int i=0;i<index-1;i++)
 				current=current.next;
-			newNode.next=current;
-			newNode.prev=current.prev;
-			current.prev=newNode;
-			current.prev.next=newNode;
+			newNode.next=current.next;			
+			newNode.prev=current;
+			current.next=newNode;
+
 			size++;
 		}
 			
@@ -179,6 +180,7 @@ public class LinkedList<T> implements List<T> {
 		
 		// Traversal the list to the index place, return the data of that node 
 		Node current=head;
+//		if(index==0) return current.data;
 		for(int i=0;i<index;i++)
 			current=current.next;
 		return current.data;
