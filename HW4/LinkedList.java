@@ -298,6 +298,7 @@ public class LinkedList<T> implements List<T> {
 		T data=head.data;
 		head.next.prev=null;
 		head=head.next;
+		size--;
 			
 		return data;
 	}
@@ -316,6 +317,7 @@ public class LinkedList<T> implements List<T> {
 		T data=tail.data;
 		tail.prev.next=null;
 		tail=tail.prev;
+		size--;
 				
 		return data;
 	}
