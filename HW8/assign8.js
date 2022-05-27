@@ -1,13 +1,3 @@
-/*function myFunction(){
-	var p_name=document.getElementById("name").value;
-	var c=document.getElementById("character").value;
-	var adv=document.getElementById("adverb").value;
-	var adj=document.getElementById("adjective").value;
-	var lib=document.getElementById("madlibs");
-	lib.innerHTML="<p>sdsdsd<p>";
-	
-
-}*/
 
 var libButton = document.getElementById("tellStory");
 var libIt = function() {
