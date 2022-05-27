@@ -1,0 +1,47 @@
+label{
+width: 150px;
+color:black;
+display: inline-block;
+}
+
+form  {
+background-color: light-blue;
+margin-left: 350px;
+margin-right:350px;
+margin-top:150px;
+}
+
+#madlibs{
+border: 3px solid;
+border-color: grey;
+
+width:  600px;
+height: 120px;
+margin-top: 35px;
+margin-bottom:35px;
+margin-left:150px;
+display: none;
+
+}
+
+body{
+background-color: lightblue;
+}
+
+#box1{
+margin-left:90px;
+margin-bottom:10px;
+}
+
+#box2{
+border: 3px solid;
+border-color: grey;
+margin-left:150px;
+margin-right:150px;
+
+}
+button{
+margin-top:20px;
+margin-left:90px;
+maigin-bottom:10px;
+}
