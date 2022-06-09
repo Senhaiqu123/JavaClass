@@ -1,0 +1,68 @@
+<!--
+<h1>
+  Welcome to {{title}}!
+</h1>
+<input type='text' (keydown)="myKeyDown($event)">
+-->
+
+
+<!--
+<h1>
+  Welcome to {{title}}!
+</h1>
+<input type="submit" value="my button" (mouseenter)="myMouseEnter()">
+<div (mouseleave)="count()">Mouse over me!
+  (and mouse away from me...)</div>
+-->
+
+<!--
+<h1>
+  Welcome to {{title}}!
+</h1>
+<input type='text' (keydown)="myKeyDown($event)">
+<h1>
+  Welcome to {{title}}!
+</h1>
+<input type='text' (keyup)="myKeyUp($event)">
+-->
+
+
+<!--
+<h1>
+  Welcome to {{title}}!
+</h1>
+<input type='text' (focus)="myFocusEvent('gainedFocus')"
+       (blur)="myFocusEvent('lostFocus')">
+-->
+
+<!--
+<h1>
+  Welcome to {{title}}!
+</h1>
+Cut from here:
+<input [(ngModel)]="myContent" type='text' (cut)="cutEvent(myContent)"> <br />
+Paste in here:
+<input type='text' [(ngModel)]="myPastedContent"
+       (paste)="pasteContent(myPastedContent)">
+copy works same way -->
+
+
+<!--
+app.component.html
+<div (mousedown)="myMouseHandler($event, 'mouse down')"
+     (mouseup)="myMouseHandler($event, 'mouse up')">
+  This area has<br />
+  mouse-down<br />
+  and<br />
+  mouse-up<br />
+  enabled.
+</div>
+-->
+
+<p [appMyHighlight]>Highlight me!</p>
+<p [appMyHighlight]="'violet'">
+  Highlight me too!
+</p>
+<p [appMyHighlight]="'green'">
+  Third Highlight me too!
+</p>
