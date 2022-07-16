@@ -70,6 +70,7 @@ public class MissionTwo<T extends Comparable<? super T>> {
 		for(int i=1;i<=size;i++)
 			data2[i-1]=data[i];
 		data=data2;
+		size--;
 		return item;
 		
 	}
